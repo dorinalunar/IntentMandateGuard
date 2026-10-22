@@ -1,0 +1,17 @@
+{
+  "sample_mandate": {
+    "rules": [
+      "The operation must only interact with whitelisted DeFi liquidity pools.",
+      "Maximum slippage tolerance specified in the payload must not exceed 50 bps."
+    ],
+    "methods": [
+      "rebalance_pool",
+      "harvest_yield"
+    ]
+  },
+  "sample_intent": {
+    "method": "rebalance_pool",
+    "target": "vault://usdc-eth-main",
+    "payload": "Rebalance 1500 USDC into the primary ETH pool with a strict slippage cap of 25 bps."
+  }
+}
